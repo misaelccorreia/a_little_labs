@@ -22,7 +22,7 @@ rule CUSTOM_COMMAND
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__to_do_app_Debug
+rule CXX_COMPILER__resolving_it_fast_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/clang++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -32,7 +32,7 @@ rule CXX_COMPILER__to_do_app_Debug
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__to_do_app_Debug
+rule CXX_EXECUTABLE_LINKER__resolving_it_fast_Debug
   command = $PRE_LINK && /usr/bin/clang++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -42,7 +42,7 @@ rule CXX_EXECUTABLE_LINKER__to_do_app_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake --regenerate-during-build -S/home/misael/Projects/to_do_app/linux -B/home/misael/Projects/to_do_app/build/linux/x64/debug
+  command = /usr/bin/cmake --regenerate-during-build -S/home/misael/Projects/a_little_labs/linux -B/home/misael/Projects/a_little_labs/build/linux/x64/debug
   description = Re-running CMake...
   generator = 1
 

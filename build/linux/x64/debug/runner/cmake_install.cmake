@@ -1,8 +1,8 @@
-# Install script for directory: /home/misael/Projects/to_do_app/linux/runner
+# Install script for directory: /home/misael/Projects/a_little_labs/linux/runner
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/misael/Projects/to_do_app/build/linux/x64/debug/bundle")
+  set(CMAKE_INSTALL_PREFIX "/home/misael/Projects/a_little_labs/build/linux/x64/debug/bundle")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
